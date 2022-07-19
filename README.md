@@ -86,3 +86,21 @@ kubectl get secret
 [ Helm 명령어 ]
 
 ### helm 차트 저장소 구축 실습
+
+
+---
+### helm 차트 구조
+
+Chart.yml : 차트에 대한 정보
+values.yml 
+- 차트템플릿에서 사용할 변수 저장
+- key, value 지정
+- 설치시 필요한값 오버라이드 가능
+ ~ -f my_values.yml
+ ~ --set my_value_count=3
+ 
+/charts/* 의존성 차트 저장
+/crds/* 
+
+
+
